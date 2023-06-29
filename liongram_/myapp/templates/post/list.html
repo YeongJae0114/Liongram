@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}글 목록{% endblock %}
+
+{% block content %}
+
+{% for post in post_list %}
+<div>{{post.content}}</div>
+<div>{{post.created_at}}</div>
+<div>{{post.writer}}</div>
+<div>{{post.id}}</div>
+
+
+{% endfor %}
+
+
+{% endblock %}
